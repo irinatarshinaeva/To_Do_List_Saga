@@ -25,4 +25,4 @@
 
 ### Список дел:
 
-![toDoList](https://github.com/irinatarshinaeva/TO_DO_LIST_SAGA_THUNK/blob/master/client/src/assets/screenshots/toDoList.png 'Список дел')
+![toDoList](https://github.com/irinatarshinaeva/To_Do_List_Saga/blob/master/client/src/assets/screenshots/toDoList.png 'Список дел')
