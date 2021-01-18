@@ -5,9 +5,11 @@ const PORT = process.env.PORT || 3001;
 const taskRouter = require('./src/routes/task');
 const dbConnect = require('./src/config/db');
 const cors = require('cors');
+const path = require('path');
 
 dbConnect();
 
+app.use(express.static(path.resolve('../client/build')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
