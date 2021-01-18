@@ -3,7 +3,7 @@ import { deleteTask } from '../actions/actions';
 import { DELETE_SAGA } from '../types/types';
 
 function getAllList(id) {
-  return fetch(`${process.env.REACT_APP_DEVELOPMENT_BACK}/tasks/${id}`, {
+  return fetch(`/tasks/${id}`, {
     method: 'DELETE',
   }).then((res) => res.status === 200);
 }

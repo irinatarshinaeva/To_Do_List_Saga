@@ -3,7 +3,7 @@ import { changeStatus } from '../actions/actions';
 import { STATUS_SAGA } from '../types/types';
 
 function changeStatusFetch(id) {
-  return fetch(`${process.env.REACT_APP_DEVELOPMENT_BACK}/tasks/${id}`, {
+  return fetch(`/tasks/${id}`, {
     method: 'PATCH',
   }).then((res) => {
     if (res.status === 200) {

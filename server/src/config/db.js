@@ -13,7 +13,7 @@ const options = {
 const dbConnectionURL = process.env.DB || 'mongodb://localhost:27017/toDoList';
 
 function dbConnect() {
-  mongoose.connect(dbConnectionURL, options, (err) => {
+  mongoose.connect(process.env.DB, options, (err) => {
     if (err) return console.log(err);
     return console.log('Success connected to mongo');
   });

@@ -16,9 +16,7 @@ export const createTaskSaga = (text) => ({
 });
 
 export const getAllTasks = () => async (dispatch, getState) => {
-  const response = await fetch(
-    `${process.env.REACT_APP_DEVELOPMENT_BACK}/tasks`
-  );
+  const response = await fetch(`/tasks`);
   const tasksList = await response.json();
   if (tasksList) {
     dispatch(setTasks(tasksList));
@@ -40,16 +38,13 @@ export const deleteTaskSaga = (id) => ({
 });
 
 export const createTaskThunk = (text) => async (dispatch, getState) => {
-  const response = await fetch(
-    `${process.env.REACT_APP_DEVELOPMENT_BACK}/tasks`,
-    {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ text }),
-    }
-  );
+  const response = await fetch(`/tasks`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ text }),
+  });
 
   if (response.status === 200) {
     const newTask = await response.json();
@@ -63,7 +58,7 @@ export const deleteTask = (id) => ({
 });
 
 export const deleteTaskThunk = (id) => (dispatch, getState) => {
-  fetch(`${process.env.REACT_APP_DEVELOPMENT_BACK}/tasks/${id}`, {
+  fetch(`/tasks/${id}`, {
     method: 'DELETE',
   }).then((res) => res.status === 200 && dispatch(deleteTask(id)));
 };
@@ -74,7 +69,7 @@ export const changeStatus = (id) => ({
 });
 
 export const changeStatusThunk = (id) => (dispatch, getState) => {
-  fetch(`${process.env.REACT_APP_DEVELOPMENT_BACK}/tasks/${id}`, {
+  fetch(`/tasks/${id}`, {
     method: 'PATCH',
   })
     .then((res) => {

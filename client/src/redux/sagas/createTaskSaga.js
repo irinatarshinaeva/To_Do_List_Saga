@@ -3,7 +3,7 @@ import { createTask } from '../actions/actions';
 import { ADD_TASK_SAGA } from '../types/types';
 
 function createTaskFetch(text) {
-  return fetch(`${process.env.REACT_APP_DEVELOPMENT_BACK}/tasks/`, {
+  return fetch(`/tasks/`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
