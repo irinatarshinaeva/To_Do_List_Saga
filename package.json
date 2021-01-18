@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "build": "cd client && yarn && yarn build",
-   "start": "cd server && yarn && yarn start"
+    "build": "cd client && yarn && yarn build",
+    "start": "cd server && npm i && npm start"
   },
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": "14.x"
+    "node": "15.x"
+  },
+  "dependencies": {
+    "update-notifier": "^5.0.1"
   }
 }
