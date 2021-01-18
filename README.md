@@ -7,9 +7,10 @@
 - Redux+Saga
 - Node.js
 - Express
-- MongoDB
+- MongoDB (Atlas)
 - Mongoose
 - Bootstrap
+- Heroku
 
 ### Ссылка на деплой проекта:
 
