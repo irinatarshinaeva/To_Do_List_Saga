@@ -14,7 +14,7 @@
 
 ### Ссылка на деплой проекта:
 
-https://to-do-list-saga.herokuapp.com/
+https://to-do-list-saga.herokuapp.com
 
 ### Список дел:
 
