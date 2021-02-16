@@ -18,4 +18,4 @@ https://to-do-list-saga.herokuapp.com
 
 ### Список дел:
 
-![toDoList](https://github.com/irinatarshinaeva/To_Do_List_Saga/blob/master/client/src/assets/screenshots/toDoList.png 'Список дел')
+![toDoList](https://github.com/irinatarshinaeva/To_Do_List_Saga/blob/master/client/src/assets/screenshots/toDoListNew.png 'Список дел')

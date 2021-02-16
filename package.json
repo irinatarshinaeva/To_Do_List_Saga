@@ -10,8 +10,5 @@
   "license": "ISC",
   "engines": {
     "node": "15.x"
-  },
-  "dependencies": {
-    "update-notifier": "^5.0.1"
   }
 }
