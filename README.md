@@ -7,19 +7,14 @@
 - Redux+Saga
 - Node.js
 - Express
-- MongoDB
+- MongoDB (Atlas)
 - Mongoose
 - Bootstrap
+- Heroku
 
-### Запуск проекта:
+### Ссылка на деплой проекта:
 
-1. Перейти в корневой каталог проекта (toDoList)
-2. В командной строке выполнить (однократно для установки): npm installall
-3. Переименовать .env.sample в .env (/server) и дописать отсутствующие поля:
-
-- DB= ссылка для подключения к базе данных Atlas
-
-4. Запуск проекта: npm start
+https://to-do-list-saga.herokuapp.com
 
 ### Список дел:
 
